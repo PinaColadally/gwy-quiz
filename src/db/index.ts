@@ -33,9 +33,7 @@ export async function getAnswerHistory(questionId: string) {
 /** 获取所有错题ID */
 export async function getWrongQuestionIds(): Promise<string[]> {
   const wrong = await db.userAnswers
-    .where('isCorrect')
-    .equals(false)
-    .distinct()
+    .filter(a => !a.isCorrect)
     .toArray();
   // 去重，保留最新的
   const map = new Map<string, UserAnswer>();
