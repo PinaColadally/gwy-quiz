@@ -1,8 +1,8 @@
 import { create } from 'zustand';
-import type { Question, QuizSession } from '../types';
+import type { Question } from '../types';
 import { CATEGORY_MAP } from '../types';
 import { questionBank, getRealExamQuestions } from '../data/questions';
-import { shuffleArray, pickRandom, uid, today } from '../utils/helpers';
+import { shuffleArray, pickRandom, uid } from '../utils/helpers';
 import { useSettingsStore } from './settingsStore';
 import { generateAIQuestions } from '../utils/aiGenerator';
 

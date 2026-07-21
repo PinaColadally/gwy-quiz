@@ -1,6 +1,5 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { useSettingsStore } from '../store/settingsStore';
-import { CATEGORIES } from '../types';
 import { exportData, importData } from '../db';
 import {
   Settings, Moon, Sun, Sliders, Key, Database,

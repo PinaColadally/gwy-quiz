@@ -1,14 +1,13 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import { getDailyStats, getCategoryStats, getStreak } from '../db';
 import { questionBank } from '../data/questions';
-import { CATEGORIES, CATEGORY_MAP } from '../types';
+import { CATEGORIES } from '../types';
 import {
-  BarChart3, TrendingUp, Calendar, Award,
-  Target, Activity, ChevronDown,
+  BarChart3, Target, Activity,
 } from 'lucide-react';
 
 export default function StatsPage() {
-  const [dailyStats, setDailyStats] = useState<{ date: string; total: number; accuracy: number }[]>([]);
+  const [dailyStats, setDailyStats] = useState<{ date: string; total: number; correct: number; accuracy: number }[]>([]);
   const [catStats, setCatStats] = useState<{ category: string; total: number; correct: number; accuracy: number }[]>([]);
   const [streak, setStreak] = useState(0);
   const [timeRange, setTimeRange] = useState<'7' | '30'>('30');
@@ -20,8 +19,9 @@ export default function StatsPage() {
   }, [timeRange]);
 
   const totalAnswered = dailyStats.reduce((s, d) => s + d.total, 0);
+  const totalCorrect = dailyStats.reduce((s, d) => s + d.correct, 0);
   const avgAccuracy = totalAnswered > 0
-    ? Math.round(dailyStats.reduce((s, d) => s + d.correct, 0) / totalAnswered * 100)
+    ? Math.round(totalCorrect / totalAnswered * 100)
     : 0;
 
   const chartMax = Math.max(...dailyStats.map(d => d.total || 0), 1);
@@ -78,7 +78,7 @@ export default function StatsPage() {
 
         {/* 简易柱状图 */}
         <div className="flex items-end gap-1 h-32">
-          {dailyStats.map((d, i) => {
+          {dailyStats.map(d => {
             const height = d.total > 0 ? (d.total / chartMax) * 100 : 0;
             return (
               <div key={d.date} className="flex-1 flex flex-col items-center gap-1">
