@@ -476,7 +476,7 @@ export const questionBank: Question[] = [
       'D. 2014年',
     ],
     answer: [0],
-    explanation: '中国共产党第十八次全国代表大会于2012年11月8日至14日在北京召开。党的十八大标志着中国特色社会主义进入新时代。',
+    explanation: '中国共产党第十八次全国代表大会于2012年11月8日至14日在北京召开。党的十九大（2017年）标志着中国特色社会主义进入新时代，十八大标志着我国进入全面建成小康社会决定性阶段。',
     source: '2024年省考行测·真题',
     tags: ['党的十八大', '2012年'],
   },
@@ -561,7 +561,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 'e-006', type: 'single', category: 'economic-thought', subCategory: '宏观经济政策',
-    difficulty: 2, isRealExam: true, year: 2024,
+    difficulty: 2, isRealExam: false, year: 2025,
     question: '中央经济工作会议提出，2025年要实施更加积极的财政政策和______的货币政策。',
     options: [
       'A. 适度宽松',
@@ -779,7 +779,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 'pl-002', type: 'single', category: 'policy-planning', subCategory: '十五五规划',
-    difficulty: 2, isRealExam: true, year: 2025,
+    difficulty: 2, isRealExam: false, year: 2025,
     question: '"十五五"规划的全称是：',
     options: [
       'A. 中华人民共和国国民经济和社会发展第十五个五年规划纲要',
@@ -794,7 +794,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 'pl-003', type: 'single', category: 'policy-planning', subCategory: '十五五规划',
-    difficulty: 3, isRealExam: true, year: 2025,
+    difficulty: 3, isRealExam: false, year: 2025,
     question: '"十五五"时期（2026-2030年）我国经济社会发展的主要目标之一是：',
     options: [
       'A. 基本实现社会主义现代化',
@@ -824,7 +824,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 'pl-005', type: 'single', category: 'policy-planning', subCategory: '政府工作报告',
-    difficulty: 1, isRealExam: true, year: 2026,
+    difficulty: 1, isRealExam: false, year: 2026,
     question: '2026年《政府工作报告》指出，中央对地方转移支付规模保持适度增长，重点向______倾斜。',
     options: [
       'A. 革命老区、民族地区、边疆地区、欠发达地区',
@@ -854,7 +854,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 'pl-007', type: 'single', category: 'policy-planning', subCategory: '政府工作报告',
-    difficulty: 2, isRealExam: true, year: 2025,
+    difficulty: 2, isRealExam: false, year: 2025,
     question: '2025年《政府工作报告》提出，要大力发展______，推动数字经济与实体经济深度融合。',
     options: [
       'A. 新质生产力',
@@ -869,7 +869,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 'pl-008', type: 'single', category: 'policy-planning', subCategory: '政府工作报告',
-    difficulty: 1, isRealExam: true, year: 2026,
+    difficulty: 1, isRealExam: false, year: 2026,
     question: '2026年《政府工作报告》提出，将居民消费价格指数（CPI）涨幅预期目标设定为：',
     options: [
       'A. 3%左右',
@@ -884,7 +884,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 'pl-009', type: 'single', category: 'policy-planning', subCategory: '十五五规划',
-    difficulty: 2, isRealExam: true, year: 2025,
+    difficulty: 2, isRealExam: false, year: 2025,
     question: '"十五五"规划建议中强调，要加快实现______，推动产业结构优化升级。',
     options: [
       'A. 高水平科技自立自强',
@@ -1023,7 +1023,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 't-008', type: 'single', category: 'tech-achievements', subCategory: '科技成就',
-    difficulty: 2, isRealExam: true, year: 2025,
+    difficulty: 2, isRealExam: false, year: 2025,
     question: '2025年，中国在人工智能领域推出的标志性大语言模型DeepSeek的关键特点是：',
     options: [
       'A. 开源、低成本、高性能',
@@ -1305,7 +1305,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 's-002', type: 'single', category: 'important-speeches', subCategory: '新年致辞',
-    difficulty: 2, isRealExam: true, year: 2025,
+    difficulty: 2, isRealExam: false, year: 2025,
     question: '2025年新年贺词中，习近平主席强调，2025年是______年。',
     options: [
       'A. "十四五"规划收官',
@@ -1320,7 +1320,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 's-003', type: 'single', category: 'important-speeches', subCategory: '新年致辞',
-    difficulty: 1, isRealExam: true, year: 2026,
+    difficulty: 1, isRealExam: false, year: 2026,
     question: '2026年新年贺词中，习近平主席指出，2026年是______之年。',
     options: [
       'A. "十五五"规划开局',
@@ -1365,7 +1365,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 's-006', type: 'single', category: 'important-speeches', subCategory: '新年致辞',
-    difficulty: 2, isRealExam: true, year: 2026,
+    difficulty: 2, isRealExam: false, year: 2026,
     question: '2026年新年贺词中，习近平主席强调要重点推进的工程是：',
     options: [
       'A. 多个重大科技和基础设施工程',
@@ -1380,7 +1380,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 's-007', type: 'single', category: 'important-speeches', subCategory: '主场外交讲话',
-    difficulty: 2, isRealExam: true, year: 2025,
+    difficulty: 2, isRealExam: false, year: 2025,
     question: '2025年，习近平主席在出席上海合作组织峰会时提出的核心主张是：',
     options: [
       'A. 构建更加紧密的上合组织命运共同体',
@@ -1395,7 +1395,7 @@ export const questionBank: Question[] = [
   },
   {
     id: 's-008', type: 'single', category: 'important-speeches', subCategory: '国际会议讲话',
-    difficulty: 2, isRealExam: true, year: 2026,
+    difficulty: 2, isRealExam: false, year: 2026,
     question: '2026年，习近平主席在联合国气候变化大会上重申中国将：',
     options: [
       'A. 坚定不移走生态优先、绿色低碳发展道路',
@@ -1821,7 +1821,7 @@ export const questionBank: Question[] = [
   {
     id: 'cur-001', type: 'single', category: 'policy-planning', subCategory: '政府工作报告',
     difficulty: 2, isRealExam: false, year: 2026,
-    question: '2026年《政府工作报告》提出，要积极的财政政策要______。',
+    question: '2026年《政府工作报告》提出，积极的财政政策要______。',
     options: [
       'A. 加力提效',
       'B. 适度加力、提质增效',
